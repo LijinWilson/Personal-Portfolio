@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // added due to error while adding an external link to image src
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "content.wepik.com",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

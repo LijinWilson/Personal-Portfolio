@@ -1,0 +1,11 @@
+First we want to create an next js.
+- next app create : npx create-next-app@{latest-version-number} {project-name}  npx create-next-app@13.4.8 portfolio
+- run app : npx start dev
+- install react icons : npm install react-icons.
+- install framer motion : npm install framer motion
+- here in header, the widget comes to the center as we applied the style via framer motion - 
+        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        animate={{ y: 0, x: "-50%", opacity: 1 }}
+- while adding an image from the external site for example image links: we have make changes in the next.config.json and also in the Image tag
+        * we should add width, height, if not error will occur
+        * the content added will be get from the error message displayed on the screen.
