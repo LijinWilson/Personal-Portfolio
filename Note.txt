@@ -3,6 +3,7 @@ First we want to create an next js.
 - run app : npx start dev
 - install react icons : npm install react-icons.
 - install framer motion : npm install framer motion
+- while using the framer motion we must add --"use client"-- directive.
 - here in header, the widget comes to the center as we applied the style via framer motion - 
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
