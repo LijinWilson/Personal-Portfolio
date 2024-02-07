@@ -9,3 +9,8 @@ First we want to create an next js.
 - while adding an image from the external site for example image links: we have make changes in the next.config.json and also in the Image tag
         * we should add width, height, if not error will occur
         * the content added will be get from the error message displayed on the screen.
+- while adding the group class we can style the inner element when the parent element is hovered the style will added to that child element.
+- In next js we can public folder using forward slash
+        eg = href="/sample.pdf"
+- we can reduce the opacity of color using border-black/10
+- 
