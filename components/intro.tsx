@@ -58,7 +58,7 @@ export default function Intro() {
       </div>
 
       {/* Description */}
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function Intro() {
         <span className="font-bold">Web developer</span> I enjoy building{" "}
         <span className="italic">sites</span>. My focus is{" "}
         <span className="underline">React (Next.js) Angular</span>.
-      </motion.p>
+      </motion.h1>
 
       {/* Contact me, download CV, Linkedin, Git hub section */}
       <motion.div
