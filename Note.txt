@@ -14,4 +14,8 @@ First we want to create an next js.
 - In next js we can public folder using forward slash
         eg = href="/sample.pdf"
 - we can reduce the opacity of color using border-black/10
+- Git push command
+        - git push origin master.
+- CSS : tracking - letter space, leading - line height 
+- use scroll is the hook of the framer motion. used in the growing effect in the project section
 - 
