@@ -4,8 +4,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
+  // getting the context data
+  // an error happened here is resolved inside the active-active-context.tsx
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -22,14 +29,34 @@ export default function Header() {
             <motion.li
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 flex items-center justify-center relative"
               key={data.hash}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                  {
+                    "text-gray-950": activeSection === data.name,
+                  }
+                )}
                 href={data.hash}
+                onClick={() => {
+                  setActiveSection(data.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {data.name}
+                {data.name === activeSection && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 30,
+                    }}
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}

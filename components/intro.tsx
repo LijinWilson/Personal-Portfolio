@@ -7,10 +7,18 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionView } from "@/lib/hook";
 
 export default function Intro() {
+  /* custom hook used for changing the section name in header on scrolling */
+  const { ref } = useSectionView("Home", 0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       {/* image and wave hand */}
       <div className="flex items-center justify-center">
         <div className="relative">

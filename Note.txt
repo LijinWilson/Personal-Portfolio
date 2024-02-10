@@ -18,4 +18,15 @@ First we want to create an next js.
         - git push origin master.
 - CSS : tracking - letter space, leading - line height 
 - use scroll is the hook of the framer motion. used in the growing effect in the project section
-- 
+- scroll-mt-8 allow the page to scroll at particular margin top, on clicking the header section
+- install ** clsx ** for adding CSS classes based on condition.
+- ** intersection observer api ** which track the section viewing on the page.
+- we have created an another active-section-context.tsx page for managing the state(active section) or to get the control over the other components of the page
+        - here we are making a communication between the header and the content of the page.
+        - wrapping the header and the children inside the context components. now it act as an provider.
+        - we want to use the consumer on the place where we want to get that data.
+- Now we are getting information in which view the page is in.
+        - we use react intersection observer
+        - inside that we use useInView hook.
+
+
