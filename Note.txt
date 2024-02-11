@@ -32,4 +32,6 @@ First we want to create an next js.
         - eg: function returnSample() ({
                 y=1
         })
-
+- On MY EXPERIENCE section, we use an third party library for showing the timeline view for experience section
+        - react-vertical-timeline-component
+- 
