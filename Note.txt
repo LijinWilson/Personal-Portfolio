@@ -28,5 +28,8 @@ First we want to create an next js.
 - Now we are getting information in which view the page is in.
         - we use react intersection observer
         - inside that we use useInView hook.
-
+- while writing an function definition insider an parenthesis it will automatically return the value inside that... instead of writing the return statement
+        - eg: function returnSample() ({
+                y=1
+        })
 
