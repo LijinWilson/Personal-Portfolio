@@ -14,7 +14,7 @@ export default function Experience() {
   // custom hook for changing the header name on scrolling while it reaches the top of the section
   const { ref } = useSectionView("Experience", 0.5);
   return (
-    <section id="experience" className="scroll-mt-28" ref={ref}>
+    <section id="experience" className="scroll-mt-28 mb-20 sm:mb-28" ref={ref}>
       <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => {
