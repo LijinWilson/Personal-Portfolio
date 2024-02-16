@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaSchool, FaSuitcase } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import fibi from "@/public/fibi.png";
+import personalPortfolio from "@/public/personalPortfolio.png"
+import BankingApplication from "@/public/BankingApplication.jpg"
+import Ecommerce from "@/public/Ecommerce.jpg"; 
 
 export const links = [
   {
@@ -30,57 +31,116 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
-  }
+  },
+  
 ] as const;
 
+// export const educationData = [
+//   {
+//     education: "10th (high school)",
+//     institution: "Arya Bharathy high school",
+//     location: "Omallur pathanamthitta",
+//     percentage: "95%",
+//     date: "2016",
+//     icon: React.createElement(FaSchool)
+//   },
+//   {
+//     education: "10th (high school)",
+//     institution: "Arya Bharathy high school",
+//     location: "pathanamthitta",
+//     percentage: "85%",
+//     date: "2018",
+//     icon: React.createElement(FaSchool)
+//   },
+//   {
+//     education: "B-Tech Electronics and Communication",
+//     institution: "Mar Baselios Christian college of engineering and technology",
+//     location: "Peerumade, Kuttikanam, Idukki",
+//     percentage: "7.13 CGPA",
+//     date: "2018 - 2022",
+//     icon: React.createElement(FaSchool)
+//   },
+// ] as const;
+
 export const experiencesData = [
+  // {
+  //   title: "Graduated bootcamp",
+  //   location: "Miami, FL",
+  //   description:
+  //     "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+  //   icon: React.createElement(LuGraduationCap),
+  //   date: "2019",
+  // },
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "10th - High School",
+    location: "Arya Bharathy high school Omallur pathanamthitta Kerala",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Percentage: 95%",
+    icon: React.createElement(FaSchool),
+    date: "2015",
+  },
+  {
+    title: "12th - Higher Secondary",
+    location: "Catholicate Higher Secondary school Pathanamtitta kerala",
+    description:
+      "Percentage: 85%",
+    icon: React.createElement(FaSchool),
+    date: "2018",
+  },
+  {
+    title: "B-Tech Electronics and Communication Engineering",
+    location: "Mar Baselios Christian College of Engineering and Technology Kuttikkanam Peermade Idukki Kerala",
+    description:
+      "CGPA: 7.13",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full Stack Developer Intern",
+    location: "Luminar TehnoLab Kochi Kerala",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Get hand on experience in building realtime Application. Have get enough skill in front framerwork such as Angular, React also get experience in backend developement using node Js express MongoDB. Completed self Project like Bank application, Eccommerce website, Clone of Instagram UI and numerous micro project",
+    icon: React.createElement(FaSuitcase),
+    date: "2022 jan - 2022 Sept",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer Trainee",
+    location: "Polus Solutions pvt ltd Trivandrum Kerala",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "A frontEnd developer creates clear and concise documentation, including flowcharts, layouts, diagrams, charts, code comments, and well-organized code to demonstrate solutions. Build application using angular. Also get hands on experience in Java, SQL also. Implement the scheduler to the application",
+    icon: React.createElement(FaSuitcase),
+    date: "2023 feb - 2022 Sept",
   },
 ] as const;
 
 export const projectsData = [
+ 
   {
-    title: "CorpComment",
+    title: "FIBI",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "It was an research administration tool used by most prominant universities which i was working on Polus Software as frontEnd developer.",
+    tags: ["Angular", "SQL", "Type script", "Java"],
+    imageUrl: fibi,
   },
   {
-    title: "rmtDev",
+    title: "Banking Application",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A banking application. It was an project i done as an full Stack developer intern on Luminar TechnoLab",
+    tags: ["Angular", "Node Js", "Mongo DB", "Express", "TypeScript"],
+    imageUrl: BankingApplication,
   },
   {
-    title: "Word Analytics",
+    title: "Ec-Commerce Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A shopping application. It was an project i done as an full Stack developer intern on Luminar TechnoLab",
+    tags: ["Angular", "Node Js", "Mongo DB", "Express", "TypeScript"],
+    imageUrl: Ecommerce,
+  }, {
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio which desctibes about me",
+    tags: ["Next Js", "Type script", "tailwind", "Framer motion",],
+    imageUrl: personalPortfolio,
   },
 ] as const;
 
@@ -88,20 +148,17 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
+  "Java",
   "TypeScript",
+  "Angular",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "SQL",
   "Framer Motion",
+  "ShadeCN"
 ] as const;

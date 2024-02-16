@@ -16,10 +16,11 @@ export default function Experience() {
   const { ref } = useSectionView("Experience", 0.5);
   // theme context
   const { theme } = useTheme();
+
   return (
     <section id="experience" className="scroll-mt-28 mb-20 sm:mb-28" ref={ref}>
-      <SectionHeading>My Experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <SectionHeading>My Experience & Education</SectionHeading>
+      <VerticalTimeline lineColor="" animate>
         {experiencesData.map((item, index) => {
           return (
             <React.Fragment key={index}>
